@@ -1,8 +1,13 @@
-body {
+:root {
+    --max-width: 800px;
+    --nav-height: 60px;
+  }
+  body {
     margin: 0;
   }
+
    nav ul {
-    width: 700px;
+    width:  var(--max-width);
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
@@ -15,6 +20,15 @@ body {
    nav ul li a {
     display: block;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: var(--nav-height);
+    line-height: var(--nav-height);
+    text-decoration: none;
+  } 
+   header {
+    width: var(--max-width);
+    margin: 0 auto;
+  }
+  section#content {
+    width: var(--max-width);
+    margin: 0 auto;
   } 
