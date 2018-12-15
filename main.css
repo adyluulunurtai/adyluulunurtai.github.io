@@ -85,7 +85,8 @@ footer{
   background-image: linear-gradient(rgb(4, 2, 12) ,rgb(219, 217, 228));
   padding: 0px 30px 20px; 
   font-size: 40px;
-  text-shadow: 0 3px 4px rgb(83, 79, 79)
+  text-shadow: 0 3px 4px rgb(83, 79, 79);
+  box-shadow: 0 30px 50px rgb(83, 79, 79);
  
 }
 footer>a>img{
