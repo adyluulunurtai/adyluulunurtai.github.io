@@ -37,10 +37,15 @@
       transform: scale(1.2)
   }
    header {
+    display: block;
     width: var(--max-width);
     margin: 0 auto;
     margin-bottom: 50px;
-    text-shadow: 0 3px 4px rgb(83, 79, 79)
+    text-shadow: 0 3px 4px rgb(83, 79, 79);
+    transition: 1s;
+  }
+  header:hover{
+    transform: scale(1.2);
   }
   section#content {
     display: flex;
@@ -63,7 +68,6 @@ h1{
     text-align: center;
     color: white;
     font-size: 80px;
-;
 }
 #foto1{
   width: 600px;
@@ -91,12 +95,14 @@ footer>a>img{
   display: inline-block;
   margin: 0 50px;
   transition: .3s;
+  animation: bounce 1s linear infinite both;
 }
 footer>a>img:hover{
-  transform: scale(1.2, 1.2);
+  animation: pulse 1s infinite;
+  animation-direction: alternate;
+
 }
-footer>p{
-  text-decoration: underline;
+
 }
 form{
   display: flex;
@@ -120,6 +126,7 @@ input:focus {
   border-bottom: 3px solid #ACACAC;
   border-radius: 10px;
   margin: 5px 0px 20px 0px;
+  width: 100%;
 }
 #subject:focus{
   outline: none;
@@ -127,6 +134,22 @@ input:focus {
 }
 #submit{
   width: 100px;
-  transform: translateX(140px);
   background-color: white;
 }
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+    /* optional */
+  }
+
+  100% {
+    transform: scale(1.3, 1.2);
+  }
+}
+
+@keyframes bounce{
+ 100% {transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+  }
