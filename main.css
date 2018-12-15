@@ -4,7 +4,7 @@
   }
   body {
     margin: 0;
-    background-image: radial-gradient(ellipse at bottom, rgb(0, 5, 20),  rgb(173, 173, 211));
+    background-image: radial-gradient(ellipse at bottom, rgb(233, 227, 227),  rgb(119, 112, 177));
     background-size: 99% 2000px;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -33,6 +33,7 @@
     color: white;
     font-size: 25px;
     transition: .3s;
+    text-shadow: 0 3px 4px rgb(83, 79, 79)
   } 
   nav ul li a:hover {
       transform: scale(1.2)
@@ -41,6 +42,7 @@
     width: var(--max-width);
     margin: 0 auto;
     margin-bottom: 50px;
+    text-shadow: 0 3px 4px rgb(83, 79, 79)
   }
   section#content {
     display: flex;
@@ -51,6 +53,8 @@
     padding: 20px 30px; 
     border-radius: 10px;
     font-size: 1.6em;
+    text-shadow: 0 3px 4px rgb(83, 79, 79);
+    box-shadow: 0 30px 50px rgb(83, 79, 79);
     
   } 
 #content ul{
@@ -61,6 +65,7 @@ h1{
     text-align: center;
     color: white;
     font-size: 80px;
+;
 }
 .active{ 
     text-decoration: underline;
@@ -72,15 +77,16 @@ h1{
   padding-left: 40px;
 }
 footer{
-  color: rgb(70, 66, 66);
+  color: rgb(255, 250, 250);
   text-align: center;
-
+  width: calc(var(--max-width)*1.5);
+  border-radius: 10px;
   margin: 0 auto 30px ;
-  background-color: white;
+  background-image: linear-gradient(rgb(4, 2, 12) ,rgb(219, 217, 228));
   padding: 0px 30px 20px; 
   font-size: 40px;
+  text-shadow: 0 3px 4px rgb(83, 79, 79)
  
-
 }
 footer>a>img{
   width: 64px;
