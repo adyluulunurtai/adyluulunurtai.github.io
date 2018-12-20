@@ -97,9 +97,6 @@ footer>a>img{
   transition: .3s;
   animation: bounce 1s linear infinite both;
 }
-footer>a>img:hover{
-  animation: pulse 1s infinite;
-  animation-direction: alternate;
 
 }
 
