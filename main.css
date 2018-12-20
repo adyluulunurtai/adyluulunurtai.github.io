@@ -8,8 +8,9 @@
     background-size: 99% 2000px;
     font-family: 'Noto Sans', sans-serif;
 }
+
    nav ul {
-    width:  var(--max-width);
+    max-width:  var(--max-width);
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
@@ -38,7 +39,7 @@
   }
    header {
     display: block;
-    width: var(--max-width);
+    max-width: var(--max-width);
     margin: 0 auto;
     margin-bottom: 50px;
     text-shadow: 0 3px 4px rgb(83, 79, 79);
@@ -50,7 +51,7 @@
   section#content {
     display: flex;
     justify-content: space-around;
-    width: calc(var(--max-width)*1.5);
+    max-width: calc(var(--max-width)*1.5);
     margin: 0 auto 100px;
     background-color: rgb(221, 210, 210);
     padding: 20px 30px; 
@@ -69,18 +70,14 @@ h1{
     color: white;
     font-size: 80px;
 }
-#foto1{
-  width: 600px;
-  height:600px ;
-  padding-left: 40px;
-}
+
 .active{ 
   text-decoration: underline;
 }
 footer{
   color: rgb(196, 188, 188);
   text-align: center;
-  width: calc(var(--max-width)*1.5);
+  max-width: calc(var(--max-width)*1.5);
   border-radius: 10px;
   margin: 0 auto 30px ;
   background-image: linear-gradient(rgb(4, 2, 12) ,rgb(219, 217, 228));
@@ -123,7 +120,7 @@ input:focus {
   border-bottom: 3px solid #ACACAC;
   border-radius: 10px;
   margin: 5px 0px 20px 0px;
-  width: 100%;
+  max-width: 100%;
 }
 #subject:focus{
   outline: none;
@@ -132,6 +129,11 @@ input:focus {
 #submit{
   width: 100px;
   background-color: white;
+}
+@media (max-width:800px){
+  nav ul {
+    flex-wrap: wrap;
+  }
 }
 
 
