@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Welcome</title>
+  <title>my website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Noto+Sans" rel="stylesheet">
@@ -11,13 +11,14 @@
 <body>
   <nav>
     <ul>
-      <li><a href="/index.html" class="active">Home</a></li>
-      <li><a href="/bio.html">About Me</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/portfolio.html">Portfolio</a></li>
-      <li><a href="/contacts.html">Contacts</a></li>
+      <li><a href="#" id="home-link" class="active">Home</a></li>
+      <li><a href="#" id="about-link">About Me</a></li>
+      <li><a href="#" id="services-link">Services</a></li>
+      <li><a href="#" id="portfolio-link">Portfolio</a></li>
+      <li><a href="#" id="contacts-link">Contacts</a></li>
     </ul>
   </nav>
+  <div  id="home-page" class="show">
   <header>
     <h1>Welcome</h1>
   </header>
@@ -27,6 +28,67 @@
       <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.</p>
     </article>
   </section>
+  </div>
+  <div id="about-page">
+  <header>
+      <h1>About me</h1>
+    </header>
+    <section id="content">
+      <article>
+        <p>I (Nurtai) know that I am special and there's no one else out there that's like me... so enjoy! (smile).</p> 
+        <p>I was born in Karakol on January 12, 1998. I had a very simple and happy childhood, I'm the youngest in the family, I have two older brothers.</p>
+        <p>After school I entered the law academy, but at the 2nd course I realized that it was not mine and started programming.</p>
+        <p>
+          Like my brothers, I am completely happy when I watch quality movies in my spare time or use a personal computer ..</p>
+      </article>
+    </section>
+  </div>
+  <div id="service-page">
+  <header>
+      <h1>Services</h1>
+    </header>
+    <section id="content">
+      <article>
+        <p>I offer Front-end services along with custom development and customization. Corporate social networks/community, intranet/the internet, community portals, e‑commerce or presentation website.</p> 
+        <p>I offer the following services:</p>
+        <ul>
+          <li>✅ Full website layout</li>
+          <li>✅ Site operation</li>
+          <li>✅ Import/Migrate content;</li>
+          <li>✅ Websites optimization/upgrade;</li>
+        </ul>
+        <p>I like to approach projects with the mindset to focus on the solution that delivers fast, cost-effective results without compromising on code quality. </p>
+        <p>In the end, (client satisfaction, privacy, & confidentiality) contribution to my clients’ success, is the biggest win.</p>
+      </article>
+    </section>
+  </div>
+  <div id="portfolio-page">
+      <header>
+          <h1>Portfolio</h1>
+        </header>
+        <section id="content">
+          <article>
+           <p> Since I am still studying, this is my first project that I tried. <br>
+               But in the future I will be happy to show here my projects and recommendations about me</p>
+          </article>
+        </section>
+  </div>
+  <div id="contacs-page">
+      <header>
+          <h1>Contacts</h1>
+        </header>
+        <section id="content">
+        <form action="adyluulunurtai7@gmail.com" method="GET">
+            <label for="your-name">Your name:</label>
+            <input type="text" id="your-name" placeholder="Your name" size="50" required><br>
+            <label for="email">Your e-mail</label>
+            <input type="email" id="email" placeholder="Your e-mail" size="50" required><br>
+            <label for="subject">Subject:</label> <br>
+            <textarea  id="subject" placeholder="Subject" cols="100" rows="10"  required></textarea> <br>
+            <input type="submit" id="submit">
+        </form>
+        </section>
+  </div>
   <footer>
  <p>Here I will leave links to my social network</p> 
     <a href="https://accounts.google.com/SignOutOptions?hl=ru&continue=https://mail.google.com/mail&service=mail"><img src="/gmail.jpg" alt=""></a>
@@ -35,5 +97,7 @@
     <a href="https://www.instagram.com/nurtai1201"><img src="/facebook.jpg" alt=""></a>
     <a href="https://www.instagram.com/nurtai1201"><img src="/twitter.png" alt=""></a>
   </footer>
+  <script src="main.js"></script>
 </body>
-</html>
+
+    
