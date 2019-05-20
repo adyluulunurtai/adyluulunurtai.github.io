@@ -2,17 +2,17 @@ let navLinks = document.querySelectorAll("nav a");
 const articles = document.querySelectorAll("div");
 const navButton = document.getElementById("nav-menu");
 let navLink = document.getElementById("navLink");
+let drawerOpen = false;
 
-window.omload = function() {
-  let menuStyle = getComputedStyle(navLink);
-  navButton.onclick = function() {
-    if (menuStyle.display == "none") {
-      navLink.classList.add("show");
-    } else {
-      navLink.classList.remove("show");
-    }
-  };
+navButton.onclick = function() {
+  !this.drawerOpen
 };
+function Drawer(props) {
+  const contentClasses = [
+    classes.navLink,
+    drawerOpen ? classes.Open : classes.Closed,
+  ].join(' ');
+
 let activeLink = navLinks[0]; // Home
 
 navLinks.forEach(function(navLink) {
@@ -35,3 +35,4 @@ navLinks.forEach(function(navLink) {
     event.preventDefault();
   });
 });
+
